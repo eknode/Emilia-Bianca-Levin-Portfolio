@@ -5,13 +5,18 @@
   <meta charset="UTF-8" />
   <title>Final Project Gallery</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="header-content">
-        <div class="logo-content">
-            <img src="/" alt="This is the logo for this website which reads, Emilia Levin"/>
-        </div>
+        <div class="rectangle"></div>
+        <div><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
     </div>
     <nav class="nav-container">
         <a href=”contact.html”>Contact</a>
@@ -20,32 +25,70 @@
 </div>
 <h1>Gallery</h1>
     <div class="body-images">
-        <img src="/" alt="image 1">
-        <img src="/" alt="image 2">
-        <img src="/" alt="image 3">
-        <img src="/" alt="image 4">
-        <img src="/" alt="image 5">
-        <img src="/" alt="image 6">
-        <img src="/" alt="image 7">
-        <img src="/" alt="image 8">
-        <img src="/" alt="image 9">
-        <img src="/" alt="image 10">
-        <img src="/" alt="image 11">
-        <img src="/" alt="image 12">
-        <img src="/" alt="image 13">
-        <img src="/" alt="image 14">
+    <div id="image-1">
+        <img style="width: 430px" src="images_gallery/self.png" alt="self protrait"/>
     </div>
+    <div id="image-2">
+        <img style="width: 430px" src="images_gallery/fruit.png" alt="fruit"/>
+    </div>
+    <div id="image-3">
+        <img style="width: 430px" src="images_gallery/comission.png" alt="comission"/>
+    </div>
+    <div id="image-4">
+        <img style="width: 430px" src="images_gallery/bird.png" alt="bird"/>
+    </div>
+    <div id="image-5">
+        <img style="width: 430px" src="images_gallery/bandw.png" alt="black and white"/>
+    </div>
+    <div id="image-6">
+        <img style="width: 430px" src="images_gallery/monkey.png" alt="self protrait"/>
+    </div>
+    <div id="image-7">
+        <img style="width: 430px" src="images_gallery/glasses.png" alt="self protrait"/>
+    </div>
+    <div id="image-8">
+        <img style="width: 430px" src="images_gallery/soul.jpeg" alt="self protrait"/>
+    </div>
+    <div id="image-9">
+        <img style="width: 430px" src="images_gallery/hands.png" alt="self protrait"/>
+    </div>
+    <div id="image-10">
+        <img style="width: 430px" src="images_gallery/fish.jpeg" alt="self protrait"/>
+    </div>
+    <div id="image-11">
+        <img style="width: 430px" src="images_gallery/feminine.png" alt="self protrait"/>
+    </div>
+        <div id="image-12">
+        <img style="width: 430px" src="images_gallery/obsession.png" alt="self protrait"/>
+    </div>
+    <div id="image-13">
+        <img style="width: 430px" src="images_gallery/bubble_hands.png" alt="self protrait"/>
+    </div>
+    <div id="image-14">
+        <img style="width: 430px" src="images_gallery/mom.png" alt="self protrait"/>
+    </div>
+
+    </div>
+    <div class="button_gallery">
+    <a href="gallery_two.html"></a>
     <button type="Gallery Page 2">
-        <img src="/" alt="buttonpng"/>
-      </button>
+        <img src="images_gallery/arrow.png" alt="buttonpng"/>
+    </button>
+    </div>
+
+    <div class="box" style="background-image: url(https://images.unsplash.com/photo-1515094854286-bc6b38a1326f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);" title="Autum">
+        <a href="www.stephanieogaygarcia.com">
+        <div class="overlay-content">Hello! 👋</div>
+        </a>
+        </div>
       
     <footer>
         <div class="footer">
             <a href="https://www.instagram.com/emiliasgallery/">
-                <img src="/" alt="Emilia's Instagram">
+                <img src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
             </a>
-            <a href="mailto:someone@example.com">
-                <img src="/" alt="Send email to Emilia Levin">
+            <a href="mailto:emelialevin@gmail.com">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
             </a>
         </div>
     </footer>
@@ -53,6 +96,52 @@
 </body>
 
 <style>
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+}
+.rectangle {
+    width:500px;
+    height:100px;
+    background:blue;
+    position: absolute;
+    top: 17px;
+}
+.nav-container {
+    position: absolute;
+    right: 15px; 
+    top: 17px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+.nav-container:hover {
+    color: #3F75CC;
+}
+h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: #AEAEAE;
+}
+.button_gallery {
+  position: absolute;
+  right: 15px;
+  bottom: 17px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+#image-1:hover {
+
+}
+footer {
+    position: center;
+    width: auto;
+    height: 100px;
+}
 
 </style>
 

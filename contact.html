@@ -3,64 +3,47 @@
 
 <head>
   <meta charset="UTF-8" />
-  <title>Final Project Contact</title>
+  <title>Final Project Gallery</title>
   <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
 </head>
 
 <body>
     <div class="header-content">
-        <div class="logo-content">
-            <img src="/" alt="This is the logo for this website which reads, Emilia Levin"/>
-        </div>
+        <div class="rectangle"></div>
+        <div><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
     </div>
     <nav class="nav-container">
         <a href=”contact.html”>Contact</a>
         <a href=”about.html”>About</a>
     </nav>
     </div>
-    <img src="/" alt="An oil painting with hands connecting to a heart and organs, there are white bunnies going through the skin colored veins">
-    
-    <div class="contact_form">
-        <h1>Contact</h1>
-        <p1>For commissions or print requests, please complete the form below.</p1>
-        <p2>You can also email directly at...</p2>
-    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
-            <label for="First Name" class="fcf-label">First name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-            <label for="Last Name" class="fcf-label">Last name</label>
-            <div class="fcf-input-group">
-                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Email" class="fcf-label">Email address</label>
-            <div class="fcf-input-group">
-                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
-            </div>
-        <div class="fcf-form-group">
-            <label for="Subject" class="fcf-label">Subject</label>
-            <div class="fcf-input-group">
-                <textarea id="Subject" name="Subject" class="fcf-form-control" rows="2" maxlength="300" required></textarea>
-        </div>
-        <div class="fcf-form-group">
-            <label for="Message" class="fcf-label">Your message</label>
-            <div class="fcf-input-group">
-                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
-            </div>
-        </div>
-        <div class="fcf-form-group">
-            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Submit</button>
-        </div>
-      </div>
+<img src="images_gallery/rabbits.png" alt=""/>
 
+<h1>Contact</h1>
+<p>Emilia Levin is a fine artist working primarily out of New York City.</p>
+<p>emilialevin@gmail.com</p>
+   
+    </div>
+    <div class="button_gallery">
+    <a href="gallery_two.html"></a>
+    <button type="Gallery Page 2">
+        <img src="images_gallery/arrow.png" alt="buttonpng"/>
+    </button>
+    </div>
+      
     <footer>
         <div class="footer">
             <a href="https://www.instagram.com/emiliasgallery/">
-                <img src="/" alt="Clickable Image to Emilia's Instagram">
+                <img src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
             </a>
-            <a href="/">
-                <img src="/" alt="Clickable Image to Emilia's Email">
+            <a href="mailto:emelialevin@gmail.com">
+                <img src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
             </a>
         </div>
     </footer>
@@ -68,6 +51,56 @@
 </body>
 
 <style>
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-size: 70px;
+}
+.rectangle {
+    width:500px;
+    height:100px;
+    background:blue;
+    position: absolute;
+    top: 17px;
+}
+.nav-container {
+    position: absolute;
+    right: 15px; 
+    top: 17px;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+}
+.nav-container:hover {
+    color: #3F75CC;
+}
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 200;
+}
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    font-weight: 200;
+}
+.button_gallery {
+  position: absolute;
+  right: 15px;
+  bottom: 17px;
+  padding: 0;
+  border: none;
+  outline: none;
+}
+#image-1:hover {
+
+}
+footer {
+    position: center;
+    width: auto;
+    height: 100px;
+}
 
 </style>
 
