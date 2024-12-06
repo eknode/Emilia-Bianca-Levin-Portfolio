@@ -16,7 +16,7 @@
 <body>
     <div class="header-content">
         <div class="rectangle"></div>
-        <div><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
+        <div class="title-box"><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
     </div>
     <nav class="nav-container">
         <a href="contact.html">Contact</a>
@@ -25,64 +25,55 @@
 </div>
 <h1>Gallery</h1>
     <div class="body-images">
-    <div id="image-1">
-        <img style="width: 430px" src="images_gallery/self.png" alt="self protrait"/>
+    <!-- <div id="image-1">
+        <img style="width: 33%" src="images_gallery/self.png" alt="self protrait"/>
     </div>
     <div id="image-2">
-        <img style="width: 430px" src="images_gallery/fruit.png" alt="fruit"/>
+        <img style="width: 33%" src="images_gallery/fruit.png" alt="fruit"/>
     </div>
     <div id="image-3">
-        <img style="width: 430px" src="images_gallery/comission.png" alt="comission"/>
+        <img style="width: 33%" src="images_gallery/comission.png" alt="comission"/>
     </div>
     <div id="image-4">
-        <img style="width: 430px" src="images_gallery/bird.png" alt="bird"/>
+        <img style="width: 33%" src="images_gallery/bird.png" alt="bird"/>
     </div>
     <div id="image-5">
-        <img style="width: 430px" src="images_gallery/bandw.png" alt="black and white"/>
+        <img style="width: 33%" src="images_gallery/bandw.png" alt="black and white"/>
     </div>
     <div id="image-6">
-        <img style="width: 430px" src="images_gallery/monkey.png" alt="self protrait"/>
+        <img style="width: 33%" src="images_gallery/monkey.png" alt="self protrait"/>
+    </div> -->
+    <div id="image-7-8">
+        <img style="width: 33%; height: 10%; object-fit: cover" src="images_gallery/glasses.png" alt="self protrait"/>
+        <img style="width: 66%;; object-fit: cover" src="images_gallery/soul.jpeg" alt="self protrait"/>
     </div>
-    <div id="image-7">
-        <img style="width: 430px" src="images_gallery/glasses.png" alt="self protrait"/>
-    </div>
-    <div id="image-8">
-        <img style="width: 430px" src="images_gallery/soul.jpeg" alt="self protrait"/>
-    </div>
-    <div id="image-9">
-        <img style="width: 430px" src="images_gallery/hands.png" alt="self protrait"/>
+    <!-- <div id="image-9">
+        <img style="width: 33%" src="images_gallery/hands.png" alt="self protrait"/>
     </div>
     <div id="image-10">
-        <img style="width: 430px" src="images_gallery/fish.jpeg" alt="self protrait"/>
+        <img style="width: 33%" src="images_gallery/fish.jpeg" alt="self protrait"/>
     </div>
     <div id="image-11">
-        <img style="width: 430px" src="images_gallery/feminine.png" alt="self protrait"/>
+        <img style="width: 33%" src="images_gallery/feminine.png" alt="self protrait"/>
     </div>
         <div id="image-12">
-        <img style="width: 430px" src="images_gallery/obsession.png" alt="self protrait"/>
+        <img style="width: 33%" src="images_gallery/obsession.png" alt="self protrait"/>
     </div>
     <div id="image-13">
-        <img style="width: 430px" src="images_gallery/bubble_hands.png" alt="self protrait"/>
+        <img style="width: 33%" src="images_gallery/bubble_hands.png" alt="self protrait"/>
     </div>
     <div id="image-14">
-        <img style="width: 430px" src="images_gallery/mom.png" alt="self protrait"/>
-    </div>
+        <img style="width: 33%" src="images_gallery/mom.png" alt="self protrait"/>
+    </div> -->
 
-    </div>
-    <div class="button_gallery">
-    <a href="gallery_two.html"></a>
-    <button type="Gallery Page 2">
-        <img src="images_gallery/arrow.png" alt="buttonpng"/>
-    </button>
-    </div>
-
-    <div class="box" style="background-image: url(https://images.unsplash.com/photo-1515094854286-bc6b38a1326f?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=400&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ);" title="Autum">
-        <a href="www.stephanieogaygarcia.com">
-        <div class="overlay-content">Hello! 👋</div>
-        </a>
-        </div>
+    <!-- </div>
+    <div class="button">
+        <a class="gallery-2" href="gallery_two.html">
+            <img src="images_gallery/arrow.png" alt="continue button to the website"/>
+          </a>
+        </a> -->
       
-    <footer>
+    <!-- <footer>
         <div class="footer">
             <a href="https://www.instagram.com/emiliasgallery/">
                 <img src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
@@ -91,33 +82,57 @@
                 <img src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
             </a>
         </div>
-    </footer>
+    </footer> -->
 
 </body>
 
 <style>
+
+   #image-1, #image-2, #image-3, #image-4, #image-5 {
+    width: 33%;
+   } 
+
+#image-7-8 {
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+}
 .title {
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
+  z-index: 99;
+}
+.title-box{
+    position: relative;
+  z-index: 97;
 }
 .rectangle {
-    width:500px;
-    height:100px;
+    width:490px;
+    height:70px;
     background:blue;
     position: absolute;
     top: 17px;
+    z-index: 1;
+    margin-left: -10;
 }
 .nav-container {
+    display:flex;
     position: absolute;
     right: 15px; 
     top: 17px;
     font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    z-index:99;
+    gap: 10px;
+}
+.nav-container a{
     font-size: 20px;
     font-weight: 200;
     color: black;
+    z-index: 99;
     text-decoration: none;
 }
-.nav-container:hover {
+.nav-container a:hover {
     color: #3F75CC;
 }
 h1 {
@@ -126,7 +141,7 @@ h1 {
     font-weight: 200;
     color: #AEAEAE;
 }
-.button_gallery {
+.gallery-2 {
   position: absolute;
   right: 15px;
   bottom: 17px;
@@ -134,13 +149,9 @@ h1 {
   border: none;
   outline: none;
 }
-#image-1:hover {
-
-}
 footer {
-    position: center;
-    width: 100px;
-    height: 100px;
+width: 100px;
+height: 100px;
 }
 
 </style>

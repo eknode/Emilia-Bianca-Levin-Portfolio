@@ -12,11 +12,10 @@
 
 <body>
     <div><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
-    <div class="button_home">
-      <a href="gallery_one.html">
-      <button>
+    <div class="button">
+      <a class="gallery-link" href="gallery_one.html">
         <img src="images_home/arrow_front.png" alt="continue button to the website"/>
-      </button>
+      </a>
     </a>
     </div> 
 </body>
@@ -28,20 +27,22 @@
   font-size: 100px;
 }
 body {
-  background-image: url('images_home/cover.jpg');
+  background: url('images_home/cover.jpg') bottom left;
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   margin-top: auto;
   margin-bottom: auto; 
+  object-fit: cover;
 }
-.button_home {
+.gallery-link {
   position: absolute;
   right: 15px;
   top: 17px;
   padding: 0;
-  border: none;
-  outline: none;
+  margin: 0;
+  border: 0;
+  outline: 0;
 }
 
 </style>
