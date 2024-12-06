@@ -14,6 +14,7 @@
 </head>
 
 <body>
+    <div class="grid-container">
     <div class="header-content">
         <div class="rectangle"></div>
         <div><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
@@ -24,7 +25,9 @@
     </nav>
     </div>
 
-<img src="images_contact_about/rabbits.png" alt=""/>
+    <div class="image">
+        <img src="images_contact_about/rabbits.png" alt=""/>
+    </div>
 
 <h1>Contact</h1>
 <p>Emilia Levin is a fine artist working primarily out of New York City.</p>
@@ -32,7 +35,7 @@
    
     
       
-    <footer>
+    <!-- <footer>
         <div class="footer">
             <a href="https://www.instagram.com/emiliasgallery/">
                 <img src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
@@ -41,46 +44,90 @@
                 <img src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
             </a>
         </div>
-    </footer>
-
+    </footer> -->
+</div>
 </body>
 
 <style>
+.grid-container{
+    display: grid;
+    grid-template-columns: 20px 20px 20px 20px;
+    grid-template-rows: 70px 80px 80px 80px 80px;
+    gap: 0;
+    grid-template-areas: 
+    "logo logo . nav"
+    "image image image image"
+    "header . . ."
+    "text . . ."
+    ". footer footer .";
+}
+
+.image {
+    grid-area: image;
+    display:flex;
+    top: 0;
+    right:0;
+    width: 100%;
+    height: 20%;
+}
+
 .title {
+    grid-area: logo;
   font-family: "Montserrat", sans-serif;
   font-size: 70px;
+  font-weight: 150;
+  z-index: 100;
 }
-.rectangle {
-    width:500px;
-    height:100px;
-    background:blue;
+.title-box{
+    grid-area: logo;
+    position: relative;
+  z-index: 97;
+}
+/* .rectangle {
+    width:490px;
+    height:70px;
+    background:white;
     position: absolute;
     top: 17px;
-}
+    z-index: 1;
+} */
 .nav-container {
+    grid-area: nav;
+    display:flex;
     position: absolute;
     right: 15px; 
     top: 17px;
     font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    z-index:99;
+    gap: 20px;
+}
+.nav-container a{
+    grid-area: nav;
     font-size: 20px;
     font-weight: 200;
     color: black;
+    z-index: 99;
     text-decoration: none;
 }
-.nav-container:hover {
+.nav-container a:hover {
+    grid-area: nav;
     color: #3F75CC;
 }
 h1 {
+    grid-area: header;
     font-family: "Montserrat", sans-serif;
     font-size: 70px;
     font-weight: 200;
 }
 p {
+    grid-area: text;
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 200;
 }
 footer {
+    grid-area: footer;
     position: center;
     width: auto;
     height: 100px;
