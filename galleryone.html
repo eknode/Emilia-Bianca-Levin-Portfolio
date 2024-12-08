@@ -29,18 +29,20 @@
     </nav>
     </div>
     <h1>Gallery</h1>
-    <div class="body-images">
-        <div class="section-one-class">
+
+
+<div class="body-images"></div>
+    <div class="image-container">
+
         <div id="sec1col1">
             <div id="image-1">
                 <img style="width: 100%" src="images_gallery/self.png" alt="self protrait" />
             </div>
-
             <div id="image-4">
                 <img style="width: 100%" src="images_gallery/bird.png" alt="bird" />
             </div>
         </div>
-
+        
         <div id="sec1col2">
 
             <div id="image-2">
@@ -50,7 +52,7 @@
                 <img style="width: 100%; height: 400px" src="images_gallery/bandw.png" alt="black and white" />
             </div>
         </div>
-
+        
         <div id="sec1col3">
             <div id="image-3">
                 <img style="width: 100%" src="images_gallery/comission.png" alt="comission" />
@@ -59,69 +61,33 @@
                 <img style="width: 100%; height: 278px" src="images_gallery/monkey.png" alt="self protrait" />
             </div>
         </div>
-
-    </div>
-
-    <div id="image-7-8">
-        <img style="width: 33%; object-fit: cover" src="images_gallery/glasses.png"
-            alt="self protrait" />
-        <img style="width: 66%; object-fit: cover" src="images_gallery/soul.jpeg" alt="self protrait" />
-    </div>
-<div class="container">
-    <!-- <div id="sec3"> -->
-        <div id="image-9" style="width: 66%">
-        <img src="images_gallery/hands.png" alt="self protrait"/>
-    </div>
-    <div id="image-10">
-        <img style="width: 100%" src="images_gallery/fish.jpeg" alt="self protrait"/>
-    </div>
-    <div id="image-11">
-        <img style="width: 100%" src="images_gallery/feminine.png" alt="self protrait"/>
-    </div>
-        <div id="image-12">
-        <img style="width: 100%" src="images_gallery/obsession.png" alt="self protrait"/>
-    </div>
-    <div id="image-13">
-        <img style="width: 100%" src="images_gallery/bubble_hands.png" alt="self protrait"/>
-    </div>
-    <div id="image-14">
-        <img style="width: 100%" src="images_gallery/mom.png" alt="self protrait"/>
-    </div>
-<!-- </div> -->
-</div>
-        <!-- </div>
-    <div class="button">
-        <a class="gallery-2" href="gallery_two.html">
-            <img src="images_gallery/arrow.png" alt="continue button to the website"/>
-          </a>
-        </a> -->
-
-        <footer>
-        <div class="footer">
-            <a href="https://www.instagram.com/emiliasgallery/">
-                <img style="display: block; height: 50px;" src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
-            </a>
-            <a href="mailto:emelialevin@gmail.com">
-                <img style="display: block; height: 70px;" src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
-            </a>
+        
+        <div id="sec2row2">
+            <div id="image-7">
+            <img style="width: 33%; object-fit: cover" src="images_gallery/glasses.png"
+                alt="self protrait" />
+            </div>
+            <div id="image-8">
+            <img style="width: 66%; object-fit: cover" src="images_gallery/soul.jpeg" alt="self protrait" />
+            </div>
         </div>
-    </footer>
+
+
 
 </body>
 
 <style>
 
-.container {
+/* .container {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 .container > div {
     width: 33%;
-}
+} */
 
-
-#sec1col1{
+    #sec1col1{
         grid-area: sec1col1;
         display: flex;
         flex-direction: column;
@@ -141,13 +107,20 @@
         flex-direction: column;
         width: 100%;
     }
+    #sec2row2{
+        grid-area: sec2row2;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
 
-    .section-one-class{
+    .image-container{
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 970px;
         grid-template-areas:
         'sec1col1 sec1col2 sec1col3'
+        'sec2row2 sec2row2 sec2row2'
         ;
         gap: 10px;
 
@@ -211,7 +184,7 @@
         font-weight: 200;
         color: #AEAEAE;
     }
-
+/* 
     .gallery-2 {
         position: absolute;
         right: 15px;
@@ -227,7 +200,7 @@
         display: flex;
         margin: auto;
         justify-content: center;
-    }
+    } */
 </style>
 
 </html>

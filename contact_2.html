@@ -14,71 +14,96 @@
 </head>
 
 <body>
-    <div id="grid-container">
-        <div class="logo">
-            <div class="rectangle"></div>
-            <div><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
-        </div>
+    <div class="header-content">
+        <a href="gallery_one.html">
+        <div class="rectangle"></div>
+        <div class="title-box"><span class="title">EMILIA L</span><span class="title"
+                style="color: #3F75CC">E</span><span class="title">VIN</span></div>
+            </a>
+            </div>
         <nav class="nav-container">
             <a href="contact.html">Contact</a>
             <a href="about.html">About</a>
         </nav>
+
+    <div id="grid-container">
         <div class="image">
             <img src="images_contact_about/rabbits.png" alt=""/>
         </div>
         <div class="main-area">
+            <div class="header">
             <h1>Contact</h1>
+            </div>
+            <div class="para1">
             <p>Emilia Levin is a fine artist working primarily out of New York City.</p>
+            </div>
+            <div class="para2">
             <p>emilialevin@gmail.com</p>
+            </div>
         </div>
-        <div class="footer">
-            <div class="insta">
+    </div>
+
+        <footer>
+            <div class="footer">
                 <a href="https://www.instagram.com/emiliasgallery/">
-                    <img src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
+                    <img style="display: block; height: 50px; transform: translateY(10px)" src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
+                </a>
+                <a href="mailto:emelialevin@gmail.com">
+                    <img style="display: block; height: 70px;" src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
                 </a>
             </div>
-            <div class="mail">
-                <a href="mailto:emelialevin@gmail.com">
-                    <img src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
-                </a>
-        </div>
+        </footer>
+
         </div>
     </div> 
 </body>
 
 <style>
+
 #grid-container{
     display: grid;
-    grid-template-columns: 40px 40px 40px 20px;
-    grid-template-rows: 90px 90px 90px 90px;
-    /* gap: 10; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 60% 2px 5px 5px;
+    height: 1000px;
     grid-template-areas: 
-    "logo logo logo nav"
-    "image image image image"
-    "main main main main"
-    ". footer footer .";
+    'image'
+    'header'
+    'para1'
+    'para2'
+    ;
 }
-.logo {
-    grid-area: logo;
-    font-family: "Montserrat", sans-serif;
-    font-size: 70px;
-    font-weight: 150;
-    position: relative;
+.header-content {
+position: sticky;
+  top: 0;
+  bottom: 90;
+  margin-left: -25px;
+  padding: 10px 16px;
+}
+.header-content a{
+    color: black;
+    text-decoration: none;
 }
 .title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 70px;
-  font-weight: 150;
-  z-index: 99;
-}
-.rectangle {
-    width:490px;
-    height:70px;
-    background:white;
-    position: absolute;
-    top: 17px;
-    z-index: 1;
-}
+        font-family: "Montserrat", sans-serif;
+        font-size: 70px;
+        font-weight: 150;
+        z-index: 99;
+    }
+
+    .title-box {
+        position: relative;
+        z-index: 97;
+    }
+
+    .rectangle {
+        width: 471px;
+        height: 70px;
+        background: white;
+        position: absolute;
+        top: 17px;
+        z-index: 1;
+        margin-left: -10;
+    }
 .nav-container {
     grid-area: nav;
     display:flex;
@@ -87,7 +112,7 @@
     top: 17px;
     font-family: "Noto Sans", sans-serif;
     text-decoration: none;
-    /* z-index:99; */
+    z-index:99;
     gap: 20px;
 }
 .nav-container a{
@@ -95,7 +120,7 @@
     font-size: 20px;
     font-weight: 200;
     color: black;
-    /* z-index: 99; */
+    z-index: 99;
     text-decoration: none;
 }
 .nav-container a:hover {
@@ -104,35 +129,61 @@
 }
 .image{
     grid-area: image;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin: 0;
     /* display:flex;
     top: 0;
     right:0;
     width: 100%;
     height: 20%; */
 } 
-.main-area{
-    grid-area: main;
-    justify-content: center;
+.image > img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    margin-left: -20px;
 }
+.main-area{
+    justify-content: center; 
+}
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.para1{
+    grid-area: para1;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+.para2{
+    grid-area: para2;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
 h1 {
     font-family: "Montserrat", sans-serif;
     font-size: 70px;
     font-weight: 200;
+    /* justify-content: center; */
 }
 p {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
     font-weight: 200;
+    /* justify-content: center; */
 }
-.footer{
-    grid-area: footer;
-}
-.insta {
-    grid-area: footer;
-    width: 100px;
-}
-.mail {
-    grid-area: footer;
-    width: 100px;
-}
+    .footer {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        margin: auto;
+        justify-content: center;
+    }
 </style>
