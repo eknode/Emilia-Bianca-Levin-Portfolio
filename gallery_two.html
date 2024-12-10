@@ -15,78 +15,123 @@
 
 <body>
     <div class="header-content">
+        <a href="gallery_one.html">
         <div class="rectangle"></div>
-        <div><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
+        <div class="title-box"><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
+        </a>
     </div>
     <nav class="nav-container">
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
     </nav>
-</div>
-<h1>Gallery</h1>
-    <div class="body-images">
-    <div id="image-1">
-        <img style="width: 430px" src="images_gallery/self.png" alt="self protrait"/>
-    </div>
-    <div id="image-2">
-        <img style="width: 430px" src="images_gallery/fruit.png" alt="fruit"/>
-    </div>
-    <div id="image-3">
-        <img style="width: 430px" src="images_gallery/comission.png" alt="comission"/>
-    </div>
-    <div id="image-4">
-        <img style="width: 430px" src="images_gallery/bird.png" alt="bird"/>
-    </div>
-    <div id="image-5">
-        <img style="width: 430px" src="images_gallery/bandw.png" alt="black and white"/>
-    </div>
-    <div id="image-6">
-        <img style="width: 430px" src="images_gallery/monkey.png" alt="self protrait"/>
-    </div>
-    <div id="image-7">
-        <img style="width: 430px" src="images_gallery/glasses.png" alt="self protrait"/>
-    </div>
-    <div id="image-8">
-        <img style="width: 430px" src="images_gallery/soul.jpeg" alt="self protrait"/>
-    </div>
-    </div>
-      
-    <footer>
-        <div class="footer">
-            <a href="https://www.instagram.com/emiliasgallery/">
-                <img src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
-            </a>
-            <a href="mailto:emelialevin@gmail.com">
-                <img src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
-            </a>
+    <h1>Gallery</h1>
+
+<div class="body-images">
+    <div class="section-one-class">
+        <div id="image-1" style="width: 33%">
+        <img style="width: 100%; height: 495px; object-fit: contain; z-index: -99;" src="images_gall_2/metal-cover.jpeg" alt="self protrait"/>
         </div>
+        <div id="image-2" style="width: 33%;">
+        <img style="width: 100%; height: 495px; object-fit: cover; z-index: -99" src="images_gall_2/head-cover.png" alt="self protrait"/>
+        </div>
+        <div id="image-3" style="width: 33%;">
+        <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/arm-cover.png" alt="self protrait"/>
+        </div>
+    </div>
+    <div id="section-two-class">
+        <div id="image-4" style="width: 39.5%;">
+        <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/ceramic.png"
+            alt="self protrait" />
+        </div>
+        <div id="image-5" style="width: 80%;">
+        <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/wood-cover.png" alt="self protrait" />
+        </div>
+    </div>
+
+    <div class="section-three-class">
+        <div id="image-6" style="width: 33%">
+        <img style="width: 100%; height: 495px; object-fit: cover; z-index: -99" src="images_gall_2/charcoal-cover.png" alt="self protrait"/>
+        </div>
+        <div id="image-7" style="width: 33%;">
+        <img style="width: 100%; height: 495px; object-fit: cover; z-index: -99" src="images_gall_2/shed.jpeg" alt="self protrait"/>
+        </div>
+        <div id="image-8" style="width: 33%;">
+        <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/hand-cover.png" alt="self protrait"/>
+        </div>
+    </div>
+</div>
+
+    <footer>
+    <div class="footer">
+        <a href="https://www.instagram.com/emiliasgallery/">
+            <img style="display: block; height: 42px; transform: translateY(9px)" src="https://png.pngtree.com/png-clipart/20230409/original/pngtree-instagram-line-icon-png-image_9040506.png"  alt="Emilia's Instagram">
+        </a>
+        <a href="mailto:emelialevin24@gmail.com">
+            <img style="display: block; height: 60px;" src="https://static.vecteezy.com/system/resources/previews/020/009/605/non_2x/email-and-mail-icon-black-free-png.png" alt="Send email to Emilia Levin">
+        </a>
+    </div>
     </footer>
 
 </body>
-
 <style>
-.title {
-  font-family: "Montserrat", sans-serif;
-  font-size: 70px;
+
+body{
+    background-color: #FFFFFF;
 }
-.rectangle {
-    width:500px;
-    height:100px;
-    background:blue;
-    position: absolute;
-    top: 17px;
+.header-content {
+position: sticky;
+  top: 0;
+  bottom: 90;
+  margin-left: -25px;
+  padding: 10px 16px;
 }
-.nav-container {
-    position: absolute;
-    right: 15px; 
-    top: 17px;
-    font-family: "Noto Sans", sans-serif;
-    font-size: 20px;
-    font-weight: 200;
+.header-content a{
     color: black;
     text-decoration: none;
 }
-.nav-container:hover {
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 150;
+    z-index: 99;
+}
+
+.title-box {
+    position: relative;
+    z-index: 97;
+}
+
+.rectangle {
+    width: 471px;
+    height: 70px;
+    background: white;
+    position: absolute;
+    top: 17px;
+    z-index: 1;
+    margin-left: -10;
+}
+
+.nav-container {
+    grid-area: nav;
+    display:flex;
+    position: absolute;
+    right: 15px; 
+    top: 40px;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    z-index:99;
+    gap: 20px;
+}
+.nav-container a{
+    grid-area: nav;
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    z-index: 99;
+    text-decoration: none;
+}
+.nav-container a:hover {
+    grid-area: nav;
     color: #3F75CC;
 }
 h1 {
@@ -95,23 +140,57 @@ h1 {
     font-weight: 200;
     color: #AEAEAE;
 }
-.button_gallery {
-  position: absolute;
-  right: 15px;
-  bottom: 17px;
-  padding: 0;
-  border: none;
-  outline: none;
-}
-#image-1:hover {
 
+.section-one-class{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transform: translateY(-10px);
 }
-footer {
-    position: center;
-    width: auto;
-    height: 100px;
+#section-two-class {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transform: translateY(6px);
 }
 
+.section-three-class{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    transform: translateY(10px);
+}
+
+.button {
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    display:flex;
+    position: absolute;
+    right: 15px; 
+    transform: translateY(15px);
+    /* width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: right;
+    transform: translateY(15px); */
+}
+.button a {
+    font-size: 20px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+    justify-content: right;
+}
+.button a:hover {
+    color: #3F75CC;
+}
+
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    transform: translateY(30px);
+}
 </style>
-
-</html>
