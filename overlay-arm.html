@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Final Project Gallery</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="header-content">
+        <a href="gallery_one.html">
+        <div class="rectangle"></div>
+        <div class="title-box"><span class="title">EMILIA L</span><span class="title" style="color: #3F75CC">E</span><span class="title">VIN</span></div>
+        </a>
+    </div>
+    <nav class="nav-container">
+        <a href="gallery_two.html">
+            <img style="width: 60px; height: 50px;" src="https://www.svgrepo.com/show/365893/x-thin.svg" alt="Back to Gallery"/>
+        </a>
+    </nav>
+    <h1>The Articulated Body Covering</h1>
+    <p1>Chipboard and Brass / Paper fasteners · 2023 </p1>
+    
+<div class="body-images">
+        <div id="row1">
+            <div id="image-1" style="width: 50%;">
+            <img style="width: 100%; height: 100%; object-fit: cover" src="images_gall_2/arm-cover.png"
+                alt=""/>
+            </div>
+            <div id="image-2" style="width: 50%;">
+            <img style="width: 100%; height: 100%; object-fit: cover" src="images_gall_2/arm-2.png" alt=""/>
+            </div>
+        </div>
+</div>
+
+</body>
+
+<style>
+#row1 {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding: 5%;
+    padding-bottom: 1%;
+}
+
+.header-content {
+position: sticky;
+  top: 0;
+  bottom: 90;
+  margin-left: -25px;
+  padding: 10px 16px;
+}
+.header-content a{
+    color: black;
+    text-decoration: none;
+}
+.title {
+    font-family: "Montserrat", sans-serif;
+    font-size: 70px;
+    font-weight: 150;
+    z-index: 99;
+}
+
+.title-box {
+    position: relative;
+    z-index: 97;
+}
+
+.rectangle {
+    width: 471px;
+    height: 70px;
+    background: white;
+    position: absolute;
+    top: 17px;
+    z-index: 1;
+    margin-left: -10;
+}
+.nav-container {
+    display:flex;
+    position: absolute;
+    right: 15px; 
+    top: 40px;
+    z-index:99;
+}
+.nav-container a{
+    z-index: 99;
+}
+h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 200;
+    color: black;
+    margin-bottom: 5px;
+}
+p1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 200;
+    color: black;
+}
+
+</style>
