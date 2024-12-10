@@ -25,49 +25,74 @@
             <img style="width: 60px; height: 50px;" src="https://www.svgrepo.com/show/365893/x-thin.svg" alt="Back to Gallery"/>
         </a>
     </nav>
-    <h1>Untitled</h1>
-    <p1>Sheet Metal and Metal Rivets · 2024</p1>
+    <h1>Janus Sculpture - Collaborative Piece with Hannah Levy</h1>
+    <p1>Casting Plaster and Burlap · 2024 </p1>
     
 <div class="body-images">
-        <div id="row1">
-            <div id="image-1" style="width: 50%;">
-            <img style="width: 100%; object-fit: cover" src="images_gall_2/metal-cover.jpeg"
-                alt=""/>
+    <div class="section-one-class">
+        <div id="sec1column1">
+            <div id="image-1">
+                <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/head-cover.png" alt="self protrait" />
             </div>
-            <div id="image-2" style="width: 50%;">
-            <img style="width: 100%; object-fit: cover" src="images_gall_2/metal-2.jpeg" alt=""/>
+            <div id="image-4">
+                <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/head-4.png" alt="bird" />
             </div>
         </div>
-        <div id="row2">
-            <div id="image-3" style="width: 50%;">
-            <img style="width: 100%; object-fit: cover" src="images_gall_2/metal-3.jpeg"
-                alt=""/>
+
+        <div id="sec1column2">
+            <div id="image-2">
+                <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/head-2.png" alt="fruit" />
             </div>
-            <!-- <div id="image-4" style="width: 50%;">
-            <img style="width: 100%; height: 500px; object-fit: contain" src="images_gall_2/metal-4.jpeg" alt=""/>
-            </div> -->
+            <div id="image-5">
+                <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/head-5.png" alt="black and white" />
+            </div>
         </div>
+
+        <div id="sec1column3">
+            <div id="image-3">
+                <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/head-3.png" alt="comission" />
+            </div>
+            <div id="image-6">
+                <img style="width: 100%; height: 495px; object-fit: cover" src="images_gall_2/head-6.png" alt="self protrait" />
+            </div>
+        </div>
+    </div>
 </div>
 
 </body>
 
 <style>
-#row1 {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    padding: 5%;
-    padding-bottom: 1%;
+.section-one-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+    padding: 2%;
+    grid-template-areas:
+    'col1 col2 col3' 
+    ;
 }
-#row2 {
+#sec1column1{
+    grid-area: col1;
     display: flex;
-    flex-direction: row;
-    gap: 2%;
-    padding: 5%;
-    padding-top: 1%;
-    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
 }
-
+#sec1column2{
+    grid-area: col2;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+#sec1column3{
+    grid-area: col3;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
 .header-content {
 position: sticky;
   top: 0;
@@ -123,5 +148,4 @@ p1 {
     font-weight: 200;
     color: black;
 }
-
 </style>
