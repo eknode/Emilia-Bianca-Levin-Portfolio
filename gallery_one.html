@@ -57,7 +57,7 @@
         </div>
     </div>
 
-    <div id="section-two-class">
+    <div class="section-two-class">
         <div id="image-7" style="width: 39.5%;">
         <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/glasses.png"
             alt="self protrait" />
@@ -124,12 +124,17 @@
 </body>
 <style>
 
+.body-images{
+    z-index: 20;
+}
+
 .header-content {
 position: sticky;
   top: 0;
   bottom: 90;
   margin-left: -25px;
   padding: 10px 16px;
+  z-index:70;
 }
 .header-content a{
     color: black;
@@ -139,12 +144,13 @@ position: sticky;
     font-family: "Montserrat", sans-serif;
     font-size: 70px;
     font-weight: 150;
-    z-index: 99;
+    position: relative;
+    /* z-index: 99; */
 }
 
 .title-box {
     position: relative;
-    z-index: 97;
+    /* z-index: 99; */
 }
 
 .rectangle {
@@ -153,7 +159,7 @@ position: sticky;
     background: white;
     position: absolute;
     top: 17px;
-    z-index: 10;
+    /* z-index: 10; */
     margin-left: -10;
 }
 
@@ -173,7 +179,7 @@ position: sticky;
     font-size: 20px;
     font-weight: 200;
     color: black;
-    z-index: 99;
+    /* z-index: 99; */
     text-decoration: none;
 }
 .nav-container a:hover {
@@ -218,7 +224,7 @@ h1 {
     gap: 10px;
 }
 
-#section-two-class {
+.section-two-class {
     display: flex;
     flex-direction: row;
     gap: 10px;
@@ -292,4 +298,6 @@ h1 {
     justify-content: center;
     transform: translateY(30px);
 }
+
+
 </style>

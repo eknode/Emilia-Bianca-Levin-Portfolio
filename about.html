@@ -104,46 +104,10 @@
 #grid-container{
     margin-left: 60px;
     margin-right: 60px;
-    /* display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    height: 1000px;
-    grid-template-areas: 
-    'image'
-    'text1'
-    'text2'
-    'text3'
-    'bottom' 
-    ; */
 }
 .image img{
     width: 100%;
 }
-/* .section1 {
-    grid-area: text1;
-    display: flex;
-    flex-direction: row;
-    /* width: 100%; 
-}
-/* .section2 {
-    grid-area: text2;
-    display: flex;
-    flex-direction: row;
-    /* width: 100%; 
-} */
-/* .section3 {
-    grid-area: text3;
-    display: flex;
-    flex-direction: row;
-    /* width: 100%; 
-}  */
-/* .bottom-images{
-    grid-area: bottom;
-    display: flex;
-    flex-direction: row;
-    /* width: 100%; 
-} */
-
 
 
 .header-content {
@@ -231,4 +195,72 @@ p1 {
     margin: auto;
     justify-content: center;
 }
+@media (max-width: 450px){
+.title{
+  font-size: 50px;
+}}
+@media (max-width: 450px){
+.rectangle{
+    width: 350px;
+    height: 52px;
+    background: white;
+    position: absolute;
+    top: 17px;
+    z-index: 1;
+    margin-left: -10;
+}}
+
+@media (max-width: 450px){
+.header-content {
+position: sticky;
+  top: 0;
+  bottom: 90;
+  margin-left: -25px;
+  padding: 10px 16px;
+}}
+@media (max-width: 450px){
+.nav-container {
+    grid-area: nav;
+    display:flex;
+    position: absolute;
+    /* right: -79px;  */
+    top: 35px;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    z-index:99;
+    gap: 15px;
+}}
+
+@media (max-width: 450px){
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+}}
+@media (max-width: 450px){
+p {
+    font-family: "Montserrat", sans-serif;
+    font-size: 20px;
+    font-weight: 200;
+}}
+@media (max-width: 450px){
+.footer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+}}
+@media (max-width: 450px){
+.bottom-images {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    height: 200px;
+}}
+@media (max-width: 450px){
+#grid-container{
+    margin-left: 20px;
+    margin-right: 20px;
+}}
 </style>
