@@ -32,27 +32,45 @@
         <div id="sec1column1">
             <div id="image-1">
                 <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/self.png" alt="self protrait" />
+                <div class="overlay">
+                    <span>Self Portrait · Oil on Canvas</span>
+                </div>
             </div>
             <div id="image-4">
                 <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/bird.png" alt="bird" />
+                <div class="overlay">
+                    <span>I’iwi Bird · Oil on Canvas</span>
+                </div>
             </div>
         </div>
 
         <div id="sec1column2">
             <div id="image-2">
                 <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/fruit.png" alt="fruit" />
+                <div class="overlay">
+                    <span>Youthful Fruit · Oil on Stretched Canvas</span>
+                </div>
             </div>
             <div id="image-5">
                 <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/bandw.png" alt="black and white" />
+                <div class="overlay">
+                    <span>Youthful Fruit · Oil on Stretched Canvas</span>
+                </div>
             </div>
         </div>
 
         <div id="sec1column3">
             <div id="image-3">
                 <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/comission.png" alt="comission" />
+                <div class="overlay">
+                    <span>Youthful Fruit · Oil on Stretched Canvas</span>
+                </div>
             </div>
             <div id="image-6">
                 <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/red_cap.jpg" alt="self protrait" />
+                <div class="overlay">
+                    <span>Youthful Fruit · Oil on Stretched Canvas</span>
+                </div>
             </div>
         </div>
     </div>
@@ -61,10 +79,16 @@
         <div id="image-7" style="width: 39.5%;">
         <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/glasses.png"
             alt="self protrait" />
+            <div class="overlay">
+                <span>Youthful Fruit · Oil on Stretched Canvas</span>
+            </div>
         </div>
         <div id="image-8" style="width: 80%;">
         <img style="width: 100%; height: 495px; object-fit: cover" src="images_gallery/soul.jpeg" alt="self protrait" />
+        <div class="overlay">
+            <span>Youthful Fruit · Oil on Stretched Canvas</span>
         </div>
+    </div>
     </div>
 
 <div class="section-three-class" >
@@ -123,6 +147,22 @@
 
 </body>
 <style>
+
+.overlay{
+    opacity: 0;
+    font-family: "Noto Sans", sans-serif;
+    font-size: 15px;
+    font-weight: 280;
+    position: relative;
+    /* vertical-align:middle; */
+    }
+
+    #image-1:hover .overlay, #image-2:hover .overlay, #image-3:hover .overlay, #image-4:hover .overlay, 
+    #image-5:hover .overlay, #image-6:hover .overlay, #image-7:hover .overlay, #image-8:hover .overlay,
+    #image-9:hover .overlay, #image-10:hover .overlay, #image-11:hover .overlay, #image-12:hover .overlay,
+    #image-13:hover .overlay, #image-14:hover .overlay{
+        opacity: 1;
+    }
 
 .body-images{
     z-index: 20;
