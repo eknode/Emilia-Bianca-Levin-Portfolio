@@ -175,21 +175,20 @@
 </body>
 <style>
 
-.overlay{
+/* .overlay{
     opacity: 0;
     font-family: "Noto Sans", sans-serif;
     font-size: 15px;
     font-weight: 280;
     position: relative;
     /* vertical-align:middle; */
-    }
 
-    #image-1:hover .overlay, #image-2:hover .overlay, #image-3:hover .overlay, #image-4:hover .overlay, 
+    /* #image-1:hover .overlay, #image-2:hover .overlay, #image-3:hover .overlay, #image-4:hover .overlay, 
     #image-5:hover .overlay, #image-6:hover .overlay, #image-7:hover .overlay, #image-8:hover .overlay,
     #image-9:hover .overlay, #image-10:hover .overlay, #image-11:hover .overlay, #image-12:hover .overlay,
     #image-13:hover .overlay, #image-14:hover .overlay{
         opacity: 1;
-    }
+    } */
 
 .body-images{
     z-index: 20;
@@ -366,5 +365,86 @@ h1 {
     transform: translateY(30px);
 }
 
+@media (max-width: 450px){
+.title{
+  font-size: 50px;
+}}
+@media (max-width: 450px){
+.rectangle{
+    width: 350px;
+    height: 52px;
+    background: white;
+    position: absolute;
+    top: 17px;
+    /* z-index: 1; */
+    margin-left: -10;
+}}
 
+@media (max-width: 450px){
+.header-content {
+position: sticky;
+  top: 0;
+  bottom: 90;
+  margin-left: -25px;
+  padding: 10px 16px;
+  z-index: 100;
+}}
+@media (max-width: 450px){
+.nav-container {
+    grid-area: nav;
+    display:flex;
+    position: absolute;
+    left: 4px; 
+    top: 80px;
+    font-family: "Noto Sans", sans-serif;
+    text-decoration: none;
+    /* z-index:100; */
+    gap: 15px;
+}}
+@media (max-width: 450px){ 
+.nav-container a{
+    grid-area: nav;
+    font-size: 18px;
+    font-weight: 200;
+    color: black;
+    z-index: 100;
+    text-decoration: none;
+}}
+@media (max-width: 450px){
+h1 {
+    font-family: "Noto Sans", sans-serif;
+    font-size: 16px;
+    font-weight: 200;
+    color: #AEAEAE;
+    margin-top: 33px;
+}}
+@media (max-width: 450px){
+.section-one-class{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 40%;
+    gap: 10px;
+    grid-template-areas:
+    'col1 col2 col3' 
+    ;
+}}
+/* @media (max-width: 450px){
+    #image-1, #image-2, #image-3, #image-4, 
+    #image-5, #image-6, #image-7, #image-8,
+    #image-9, #image-10, #image-11, #image-12,
+    #image-13, #image-14{
+    height: 200px;
+}} */
+/* @media (max-width: 450px){
+    .body-images img{
+height: 200px;
+}} */
+@media (max-width: 450px){
+.button a {
+    font-size: 16px;
+    font-weight: 200;
+    color: black;
+    text-decoration: none;
+    justify-content: right;
+}}
 </style>
