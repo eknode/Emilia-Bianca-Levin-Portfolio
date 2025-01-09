@@ -24,7 +24,11 @@
         <a href="contact.html">Contact</a>
         <a href="about.html">About</a>
     </nav>
-    <h1>Gallery</h1>
+    <!-- <h1>Gallery</h1> -->
+    
+    <div class="button" >
+        <a href="gallery_two.html">. . . Continue</a>
+    </div>
 
     <div class="body-images">
         
@@ -157,9 +161,6 @@
 </div>
 </div>
 </div>
-        <div class="button" >
-            <a href="gallery_two.html">Continue to Gallery 2</a>
-        </div>
 
     <footer>
     <div class="footer">
@@ -253,12 +254,12 @@ position: sticky;
     grid-area: nav;
     color: #3F75CC;
 }
-h1 {
+/* h1 {
     font-family: "Noto Sans", sans-serif;
     font-size: 18px;
     font-weight: 200;
     color: #AEAEAE;
-}
+} */
 
 .section-one-class{
     display: grid;
@@ -337,10 +338,12 @@ h1 {
 .button {
     font-family: "Noto Sans", sans-serif;
     text-decoration: none;
-    display:flex;
-    position: absolute;
-    right: 15px; 
-    transform: translateY(15px);
+    display:grid;
+    justify-content: end;
+    margin-right: 5.5px;
+    /* position: static;
+    right: 15px;  */
+    /* transform: translateY(15px); */
     /* width: 100%;
     height: 100%;
     display: flex;
@@ -348,15 +351,18 @@ h1 {
     transform: translateY(15px); */
 }
 .button a {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 200;
-    color: black;
+    color: #3F75CC;
+    /* font-size: 20px;
+    font-weight: 200;
+    color: black; */
     text-decoration: none;
     justify-content: right;
 }
-.button a:hover {
+/* .button a:hover {
     color: #3F75CC;
-}
+} */
 
 .footer {
     width: 100%;
